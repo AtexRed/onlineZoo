@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.remove('active');
     });
 
-    $(function(){
+    $(function(e){
         $("a[href^='#']").click(function(){
                 var _href = $(this).attr("href");
                 $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
